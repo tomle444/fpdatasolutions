@@ -1,0 +1,12 @@
+_site
+.sass-cache
+
+#Globally excluded files
+.DS_Store
+npm-debug.log
+*.gz
+*.swp
+*.tar
+*.tar.gz
+
+/sitemap.xml
