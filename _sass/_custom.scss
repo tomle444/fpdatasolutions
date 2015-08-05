@@ -1,0 +1,629 @@
+/*******************
+*
+* Focal Point Data Soltions - Custom Styles
+* overwrite.scss 
+*
+********************/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+body {}
+
+a {
+    @include transition(color .3s ease);
+    &:hover {
+        text-decoration: none;
+        color: lighten($brand-color, 25%);
+    }
+} 
+
+
+
+.wrapper {
+    max-width: 1200px;
+}
+
+
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 0px solid $grey-color-dark;
+    border-bottom: 0px solid $grey-color-light;
+    min-height: 125px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    .wrapper {
+        position: relative;
+    }
+    .logo {
+        margin-top: 15px;
+    }
+    a.login {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: uppercase;
+        background-color: #edf5fa;
+        font-size: 11px;
+        color: $brand-color;
+        font-weight: 400;
+        padding: 6px 20px;
+        @include transition(background-color .3s ease);
+        &:hover {
+            background-color: darken(#edf5fa, 5%);
+        }
+    }
+    
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 105px;
+    margin-top: 10px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $brand-color;
+        line-height: $base-line-height;
+        text-transform: uppercase;
+        font-weight: 400;
+        // Gaps between nav items, but not on the first one
+        @include transition(color .3s ease);      
+    
+        &:hover {
+            color: lighten($brand-color, 25%);
+        }
+
+    }     
+    @include bp(max-width, 830px){
+        .page-link {
+            font-size: 13px;
+        }
+    } 
+}
+
+
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+    border-top: 0px solid $grey-color-light;
+    padding: 0;
+    background-color: #edf5fa;
+    .mobile-footer {
+        display: none;
+    }
+    .wrapper {
+        padding:  $spacing-unit ;
+    }
+    h2 {
+        font-size: 14px;
+        display: inline;
+    }
+    span {
+        margin: auto 20px;
+    }
+    a {
+        margin: auto 10px;
+    }
+    @include bp(max-width, 830px){ 
+        h2 {
+            font-size: 12px;
+        }
+        span {
+            font-size: 12px;
+            margin: auto 10px;
+        }
+        a {
+            font-size: 12px;
+            margin: auto 5px;
+        }
+    }
+    @include bp(max-width, 590px){ 
+        .mobile-footer {
+            display: block;
+            background-color: white;
+            padding-bottom: 20px;
+            a {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 15px;
+                margin: auto;
+                text-transform: uppercase;
+                border-bottom: 1px solid #eee;
+                @include transition(background-color .3s ease, color .3s ease);
+                &.grey {
+                    color: #aaa;
+                }
+                &.first {
+                    border-top: 1px solid #eee;
+                }
+                
+                &:hover {
+                    background-color: darken(#eee, 5%);
+                    color: #666;
+                }
+                
+            }
+        }
+        .wrapper {
+            padding: $spacing-unit 0;
+        
+            h2 {
+                display: block;
+                text-align: center;
+            }
+            span {
+                display: none;
+            }
+            a {
+                display: none;                
+            }
+        }
+    }
+    
+}
+
+
+#topPage { 
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: lighten($brand-color, 5%);
+    text-transform: uppercase;
+    @include transition(background-color 0.3s ease);
+    a {
+        color: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($brand-color, 10%);
+    }
+}
+
+/* Sticky Footer */
+.container {
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -90px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+    height: 90px; /* .push must be the same height as .footer */
+}
+
+@include bp(max-width, 590px){ 
+    .container {
+        min-height: 100%;
+        height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+        height: 100%;
+        margin: 0 auto -444px; /* the bottom margin is the negative value of the footer's height */
+    }
+
+    footer, .push {
+        height: 444px; /* .push must be the same height as .footer */
+    }
+}
+
+
+
+/**
+ * Homepage
+ */
+
+ .page-content {
+    .wrapper {
+        max-width: 100%;
+        padding: 0px;
+        margin: auto;
+        .content {
+            h2 {
+                font-size: 40px;
+                color: $brand-color;
+            }
+        }      
+        .home {
+            .hero {
+                background-image: url('../images/bg_hero.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 450px;
+                line-height: 450px;
+                text-align: center;
+                h1 {
+                    vertical-align: middle;
+                    color: white;
+                    text-align: center;
+                    line-height: 1.4;
+                    font-size: 40px;
+                    text-transform: none;
+                    display: inline-block;
+                    margin: auto;
+                    span {
+                        display: block;
+                    }
+                }
+                @include media-query($on-tablet) {
+                    h1 {
+                        font-size: 28px;
+                        //line-height: 30px;
+                    }
+                }
+                @include bp(max-width, 530px) {
+                    h1 {
+                        width: 90%;
+                        span {
+                            display: inline;
+                        }
+                    }
+                }
+                @include bp(max-width, 400px) {
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+            }
+                  
+        }
+        .about {
+            background-color: $brand-color;
+            overflow: hidden;
+            .content {
+                color: #fff;
+                h2 {
+                    color: #fff;
+                    font-size: 40px;
+                }
+                .button {
+                    background-color: #008ec9;
+                    @include transition(background-color .3s ease);
+                    &:hover {
+                        background-color: lighten($brand-color, 10%);
+                    }
+                }
+            }
+        }
+    }
+ }
+ 
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: 0;
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+    }
+    .button {
+        text-transform: uppercase;
+        background-color: $brand-color;
+        color: white;
+        padding: 14px 50px;
+        margin: $spacing-unit auto;
+        display: inline-block; 
+        @include transition(background-color .3s ease);
+        &:hover {
+            background-color: lighten($brand-color, 10%);
+        }
+    }
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    text-align: center;
+    margin: ($spacing-unit + 20px) auto;
+    padding: 0 $spacing-unit;
+}
+
+
+/**
+* CMS Page
+**/
+.cms-page {
+    
+    .page-header {
+        background-image: url('../images/bg_hero.jpg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 210px;
+        line-height: 210px;
+        text-align: center;
+        h1 {
+            vertical-align: middle;
+            color: white;
+            text-align: center;
+            line-height: 1.4;
+            font-size: 40px;
+            text-transform: none;
+            display: inline-block;
+            margin: auto;
+        }
+    }
+    .page-content {
+        .wrapper {
+            padding: 0;
+             .main-content {
+                .content {
+                    text-align: center;
+                    overflow: hidden;
+                    h2 {
+                        text-transform: none;
+                        font-size: 24px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &.pharmacy-pointe {
+        .page-content {
+            .wrapper {
+                padding: 0;
+                 .main-content {
+                    .content {
+                        text-align: center;
+                        overflow: hidden;
+                        h2 {
+                            text-transform: none;
+                            font-size: 24px;
+                        }
+                        .col {
+                            width: 49%;
+                            float: left;
+
+                            .col-inner {
+                                width: 90%;
+                                margin: auto;
+                                position: relative;
+                                min-height: 400px;
+                                h2 {
+                                    text-transform: uppercase;
+                                    img {
+                                        width: 50px;
+                                    }
+                                }
+                                ul { 
+                                    color: $brand-color;
+                                    list-style-position: inside;
+                                    display: block;
+                                    clear: both;
+                                    margin: 10px auto;
+                                    width: 75%;
+                                    max-width: 320px;
+                                    li {
+                                        text-align: left;
+                                        float: left;
+                                        width: 49%;
+                                        padding: 4px 0;
+                                        span {
+                                            color: #000;
+                                            padding: 4px 0 4px 0px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                }
+                                a.button {
+                                    min-width: 220px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include bp(max-width, 980px){
+            .page-content {
+                .wrapper {                
+                     .main-content {
+                        .content {                        
+                            h2 {
+                            }
+                            .col {
+                                width: 49%;
+                                float: left;
+
+                                .col-inner {                                
+                                    h2 {                             
+                                    }
+                                    ul {                                     
+                                        width: 90%;
+                                        li {
+                                            text-align: left;
+                                            float: left;
+                                            width: 49%;
+                                            padding: 4px 0;
+                                            span {
+                                                color: #000;
+                                                padding: 4px 0 4px 0px;
+                                                font-size: 14px;                                                
+                                            }
+                                        }
+                                    }
+                                    a.button {
+                                       min-width: 70%;
+                                    }
+                                }
+                            }
+                            @include media-query($on-tablet){
+                                .col {
+                                    width: 100%;
+                                    float: none;
+                                    margin-bottom: 20px;
+                                    .col-inner {
+                                        h2 {
+                                            img {
+                                                display: block;
+                                                text-align: center;
+                                                margin: auto;
+                                                width: auto;
+                                            }
+                                        }
+                                        ul {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }      
+    &.news, &.compliance, &.optimization, &.privacy, &.terms-and-conditions, &.about-us {
+        .page-content{
+            .wrapper {
+                .main-content{
+                    .content {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 
+* Responsiveness 
+*/
+
+@include media-query($on-tablet) {
+    .site-header {
+        min-height: 70px;
+        .logo {
+            width: 200px;
+            margin-top: 4px;
+            position: relative;
+            z-index: 4;
+        }
+        a.login {
+            display: none;
+        }
+
+    
+
+        .site-nav {
+            margin-top: 0; 
+            position: absolute; 
+            top: 0px;
+            right: 0px;
+            background-color: rgba(0,0,0,0);
+            border: 0px solid $grey-color-light;
+            border-radius: 0px;
+            text-align: center;
+            width: 100%;
+            z-index: 3;
+            .menu-icon {
+                display: block;
+                float: right;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                padding-top: 0px;
+                text-align: center;
+                background-color: $brand-color;
+
+                > svg {
+                    width: 18px;
+                    height: 15px;
+
+                    path {
+                        fill: white;
+                    }
+                }
+            }
+
+            .trigger {
+                clear: both;
+                display: none;
+            }
+
+            &:hover .trigger {
+                display: block;
+                padding-bottom: 5px;
+                top: 70px;
+
+            }
+
+            .page-link {
+                display: block;
+                padding: 16px;
+                font-size: 16px;
+                background-color: rgba(255,255,255,.9);
+                border-bottom: 1px solid #fff;                
+                @include bp(max-width, $on-tablet){
+                    &:not(:first-child) {
+                        margin-left: 0px;
+                    }
+                }                
+            }
+            
+        }
+    }
+    .page-content {
+        .wrapper {
+            .content {
+                h2 {
+                    font-size: 24px;
+                    line-height: 1.4;
+                }
+                .button {
+                    width:70%;
+                }
+            }
+            .about {
+                .content {
+                    h2 {
+                        font-size: 24px;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }    
+
+}
