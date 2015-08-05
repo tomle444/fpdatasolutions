@@ -21,6 +21,11 @@ a {
     }
 } 
 
+hr {
+    border: 0; height:1px; background-color: #eee;
+    margin: 30px auto;
+}
+
 
 
 .wrapper {
@@ -526,11 +531,9 @@ footer, .push {
                                 width: 49%;
                                 float: left;
 
-                                .col-inner {                                
-                                    h2 {                             
-                                    }
-                                    ul {                                     
-                                        width: 90%;
+                                .col-inner {   
+                                    h2 {}
+                                    ul {                            width: 90%;
                                         li {
                                             text-align: left;
                                             float: left;
@@ -539,7 +542,7 @@ footer, .push {
                                             span {
                                                 color: #000;
                                                 padding: 4px 0 4px 0px;
-                                                font-size: 14px;                                                
+                                                font-size: 14px;   
                                             }
                                         }
                                     }
@@ -586,6 +589,168 @@ footer, .push {
             }
         }
     }
+
+    &.compliance, &.optimization {
+        .page-content {
+            .wrapper {
+                padding: 0;
+                .page-header {
+                    h1 {
+                        text-transform: uppercase;
+                        svg {
+                            width: 50px; height: 50px;
+                            display: inline-block;
+                            vertical-align: top;
+                            path {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                 .main-content {                    
+                    .content {
+                        background-color: #f6fafc;
+                        margin: 0 auto;
+                        padding: 0;
+                        .col-inner {
+                            margin: 40px 20px;
+                        }
+                        .col-main {
+                            float: right;
+                            width: 75%;
+                            background-color: white;
+                            overflow: hidden;
+                            .col-inner {
+                                width: 85%;
+                                margin: 40px auto;
+                                .intro {
+                                    margin: 20px auto 40px;
+                                    a.compliance-screen {
+                                        display: inline-block;
+                                        width: 33%;
+                                        margin: 20px auto;
+                                        text-align: center; 
+                                        img {
+                                            width: 240px;
+                                        }
+                                    }
+                                }
+
+                                h4 {
+                                    color: $brand-color;
+                                    font-weight: 400;
+                                    text-transform: none;
+                                    font-size: 18px;
+                                    padding: 20px 0;
+                                    margin-bottom: 0;
+                                }
+                                .dose-section {                                   
+                                    border-top: 1px solid #eee;
+                                    .dose-description {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .col-left {
+                            background-color: #f6fafc;
+                            width: 24%;
+                            float: left;
+                            ul {
+                                list-style-type: none;
+                                li {
+                                    padding: 8px;
+                                    a {}
+                                }
+                            }
+                        }                                         
+                    }
+                    .content-bottom {
+                        background-color: $brand-color;
+                        padding: 0;
+                        margin: 0 auto;
+                        max-width: 100%;
+                        .content {
+                            text-align: center;
+                            color: white;
+                            background-color: $brand-color;
+                            padding: 40px 20px;
+                            h2 {
+                                font-size: 34px;
+                                color: white;
+                                text-transform: uppercase;
+                            }
+                            a.button {
+                                background-color: #008ec9;
+                                &:hover {
+                                    background-color: lighten($brand-color, 10%);
+                                }
+                            }
+                            
+                        }
+                    }  
+                    @include media-query($on-tablet){
+                        .content {
+                            .col-left {
+                                display: none;
+                            }
+                            .col-main {
+                                float: none; 
+                                width: 100%;
+                                .col-inner {
+
+
+                                    .intro {
+                                        a.compliance-screen {
+                                            width: 100%; 
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .dose-section {
+                                        h4 {
+                                            text-transform: uppercase;
+                                            cursor: pointer;                                     
+                                            position: relative;
+                                            &:after {
+                                                content: '';
+                                                position: absolute;
+                                                display: block;
+                                                top: 40%; 
+                                                right: 2%;
+                                                width: 0;
+                                                height: 0;
+                                                border-style: solid;
+                                                border-width: 6px 0 6px 10px;
+                                                border-color: transparent transparent transparent $brand-color;
+                                            } 
+                                        }
+                                        .dose-description {
+
+                                        }
+                                        &.active {
+                                            h4 {
+                                                &:after {
+                                                    border-width: 10px 6px 0px 6px;
+                                                    border-color: 
+                                                        $brand-color
+                                                        transparent transparent transparent; 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -656,8 +821,8 @@ footer, .push {
                 display: block;
                 padding: 16px;
                 font-size: 16px;
-                background-color: rgba(255,255,255,.9);
-                border-bottom: 1px solid #fff;                
+                background-color: rgba(255,255,255,1);
+                border-bottom: 1px solid #eee;                
                 @include bp(max-width, $on-tablet){
                     &:not(:first-child) {
                         margin-left: 0px;
