@@ -317,6 +317,68 @@ footer, .push {
                 }
             }
         }
+        form.contact-form {
+            width: 90%;
+            margin: auto;
+            div.field {
+                float: left;
+                width: 33%;
+                text-align: left;
+                margin: 10px auto;
+            }
+            div.field.full {
+                width: 100%;
+            }
+        }
+        @include media-query($on-tablet){
+            form.contact-form {
+                width: 100%;
+                margin: auto;
+                div.field {
+                    float: none;
+                    width: 100%;
+                    text-align: left;
+                    margin: 10px auto;
+                    input.input, textarea {
+                        width: 98%;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+ form {
+    label {
+        display: block;
+        text-align: left;
+        color: #666;
+        padding: 4px 0;
+    }
+    input.input, textarea {
+        border: 2px solid #eee;
+        padding: 10px 4px;
+        width: 88%;
+        outline: none;
+        font-size: 18px;
+        color: #ccc;
+        font-family: $base-font-family;
+        &:focus {
+            border: 2px solid $brand-color;
+            background-color: lighten($brand-color, 62%);
+            color: #666;
+        }
+    }
+    textarea {
+        width: 95%;
+        float: left;
+    }
+    .button {
+        font-size: 16px;
+        border: 0;      
+        font-family: $base-font-family;
+        cursor: pointer;
+        min-width: 320px;
     }
  }
  
@@ -337,6 +399,7 @@ footer, .push {
         padding: 14px 50px;
         margin: $spacing-unit auto;
         display: inline-block; 
+        min-width: 220px;
         @include transition(background-color .3s ease);
         &:hover {
             background-color: lighten($brand-color, 10%);
@@ -613,6 +676,7 @@ footer, .push {
                 }
                 .button {
                     width:70%;
+
                 }
             }
             .about {

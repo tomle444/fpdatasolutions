@@ -26,7 +26,7 @@ body-class: static-page compliance
 	<p><strong>DoseDirect</strong> <br />
 	DoseDirect provides IV compounding staff with a formula recipe (MFR – Master Formula Record) on how to prepare a given compounded sterile product (CSP) as well as documenting the quality review steps needed for verification. The recipe used is linked with the prepared sterile compound to enable audit tracking, compliance and reporting.  </p>
 
-	<p><strong>DoseDirect also can connect to your IV Workflow Manager to automatically create master formula records which can then be reviewed, edited, and approved, saving time and labor for clinical managers, pharmacy operation managers, or other pharmacy leaders, from having to create IV recipes manually. </p>
+	<p>DoseDirect also can connect to your IV Workflow Manager to automatically create master formula records which can then be reviewed, edited, and approved, saving time and labor for clinical managers, pharmacy operation managers, or other pharmacy leaders, from having to create IV recipes manually. </p>
 
 	<p><strong>DoseConnect</strong> <br />
 	DoseConnect is the core PharmacyPointe technology that integrates with clients’ IV Workflow Management (IVWM) systems. DoseConnect unlocks the data in your IVWM system to enable detailed data analysis, deep operational insights, and powerful knowledge management.  </p>
