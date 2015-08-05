@@ -3,7 +3,7 @@ layout: page
 title: News
 permalink: news/
 weight: 3
-body-class: cms-page news
+body-class: static-page news
 ---
 
 <div class="content">

@@ -3,7 +3,7 @@ layout: page
 title: About Us
 permalink: about-us/
 weight: 2
-body-class: cms-page about-us
+body-class: static-page about-us
 ---
 
 <div class="content">

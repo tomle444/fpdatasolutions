@@ -6,7 +6,7 @@ exclude_from_nav: true
 include_in_footer: true
 link-class: grey
 weight: 9
-body-class: cms-page privacy
+body-class: static-page privacy
 ---
 
 <div class="content">

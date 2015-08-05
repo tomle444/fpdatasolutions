@@ -5,7 +5,7 @@ permalink: compliance/
 exclude_from_nav: true
 include_in_footer: false
 weight: 0
-body-class: cms-page compliance
+body-class: static-page compliance
 ---
 
 <div class="content">

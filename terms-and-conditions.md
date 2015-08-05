@@ -6,7 +6,7 @@ exclude_from_nav: true
 include_in_footer: true
 link-class: grey last
 weight: 10
-body-class: cms-page terms-and-conditions
+body-class: static-page terms-and-conditions
 ---
 <div class="content">
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)

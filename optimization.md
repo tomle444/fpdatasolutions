@@ -5,7 +5,7 @@ permalink: optimization/
 exclude_from_nav: true
 include_in_footer: false
 weight: 0
-body-class: cms-page optimization
+body-class: static-page optimization
 ---
 
 <div class="content">
