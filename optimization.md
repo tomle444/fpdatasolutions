@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Optimization
-permalink: /optimization/
+permalink: optimization/
 exclude_from_nav: true
 include_in_footer: false
 weight: 0

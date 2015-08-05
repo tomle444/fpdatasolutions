@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Us
-permalink: /about-us/
+permalink: about-us/
 weight: 2
 body-class: cms-page about-us
 ---

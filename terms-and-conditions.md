@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Terms and Conditions
-permalink: /terms-and-conditions/
+permalink: terms-and-conditions/
 exclude_from_nav: true
 include_in_footer: true
 link-class: grey last

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Privacy
-permalink: /privacy/
+permalink: privacy/
 exclude_from_nav: true
 include_in_footer: true
 link-class: grey

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: News
-permalink: /news/
+permalink: news/
 weight: 3
 body-class: cms-page news
 ---

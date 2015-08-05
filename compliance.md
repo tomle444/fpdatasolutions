@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Compliance
-permalink: /compliance/
+permalink: compliance/
 exclude_from_nav: true
 include_in_footer: false
 weight: 0

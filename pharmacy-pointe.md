@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pharmacy Pointe
-permalink: /pharmacy-pointe/
+permalink: pharmacy-pointe/
 weight: 1
 link-class: first
 body-class: cms-page pharmacy-pointe 
