@@ -802,20 +802,17 @@ footer, .push {
                     path {
                         fill: white;
                     }
-                }
+                }               
             }
 
             .trigger {
                 clear: both;
                 display: none;
-            }
-
-            &:hover .trigger {
-                display: block;
                 padding-bottom: 5px;
                 top: 70px;
-
             }
+
+            
 
             .page-link {
                 display: block;

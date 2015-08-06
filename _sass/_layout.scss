@@ -67,6 +67,7 @@
                     fill: $grey-color-dark;
                 }
             }
+            
         }
 
         .trigger {
@@ -74,10 +75,7 @@
             display: none;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+        
 
         .page-link {
             display: block;
