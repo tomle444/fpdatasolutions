@@ -1,0 +1,106 @@
+/**
+ * Site footer
+ */
+
+.site-footer {
+    border-top: 0px solid $grey-color-light;
+    padding: 0;
+    background-color: #edf5fa;
+    .mobile-footer {
+        display: none;
+    }
+    .wrapper {
+        padding:  $spacing-unit ;
+    }
+    h2 {
+        font-size: 14px;
+        display: inline;
+    }
+    span {
+        margin: auto 20px;
+    }
+    a {
+        margin: auto 10px;
+    }
+    @include bp(max-width, 830px){ 
+        h2 {
+            font-size: 12px;
+        }
+        span {
+            font-size: 12px;
+            margin: auto 10px;
+        }
+        a {
+            font-size: 12px;
+            margin: auto 5px;
+        }
+    }
+    @include bp(max-width, 590px){ 
+        .mobile-footer {
+            display: block;
+            background-color: white;
+            padding-bottom: 20px;
+            a {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                padding: 15px;
+                margin: auto;
+                text-transform: uppercase;
+                border-bottom: 1px solid #eee;
+                @include transition(background-color .3s ease, color .3s ease);
+                &.grey {
+                    color: #aaa;
+                }
+                &.first {
+                    border-top: 1px solid #eee;
+                }
+                
+                &:hover {
+                    background-color: darken(#eee, 5%);
+                    color: #666;
+                }
+                
+            }
+        }
+        .wrapper {
+            padding: $spacing-unit 0;
+        
+            h2 {
+                display: block;
+                text-align: center;
+            }
+            span {
+                display: none;
+            }
+            a {
+                display: none;                
+            }
+        }
+    }
+    
+}
+
+
+#topPage { 
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: lighten($brand-color, 5%);
+    text-transform: uppercase;
+    @include transition(background-color 0.3s ease);
+    a {
+        color: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: lighten($brand-color, 10%);
+    }
+}

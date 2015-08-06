@@ -19,6 +19,6 @@ body-class: static-page about-us
 	<h2>OUR COMMITMENT</h2>
 	<p>Focal Pointe is committed to providing exceptional value through quality services that enable our clients to achieve their goals. We strive to establish and maintain long term relationships, and are dedicated to ensure the success of our clients in today's volatile and cost-constrained healthcare environment.</p>
 
-	<p><a href="/#contact-us">Contact Us</a> today to learn more about how Focal Pointe can help your organization better manage and understand your data.</p>
+	<p><a href="{{ site.baseurl }}/#contact-us">Contact Us</a> today to learn more about how Focal Pointe can help your organization better manage and understand your data.</p>
 
 </div>
