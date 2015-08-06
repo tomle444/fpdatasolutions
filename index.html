@@ -1,23 +1,71 @@
 ---
 layout: default
+body-class: static-index homepage
 ---
 
 <div class="home">
+  <div class="hero">
+    <h1>Providing Reporting Solutions to Hospitals
+        <span>in Order to Enhance Your Productivity</span>
+    </h1>
+  </div>
+  <div class="content">
+    <img src="{{site.baseurl}}/images/homepage_pharmacy_pointe.png" alt="Homepage Pharmacy Pointe"/>
+    <h2>Pharmacy Pointe</h2>
+    <p>Focal Pointe’s PharmacyPointe software suite was specifically designed for hospital pharmacies to help manage their sterile compounding procedures, workflow and communication to meet regulatory compliance through the use of its automated workflows and powerful dashboard analytics and reporting.</p>
+    <a class="button" href="{{site.baseurl}}/pharmacy-pointe/">Learn More</a>
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  </div>
 </div>
+
+<div class="about">
+  <div class="content">
+    <img src="{{site.baseurl}}/images/homepage_about.png" alt="Homepage About"/>
+    <h2>About Focal Pointe</h2>
+    <p>Focal Pointe Data Solutions, LLC’s (Focal Pointe) mission is to provide innovative and relevant reporting solutions and services to the healthcare industry to enable them to work more efficiently, distribute critical information more effectively, and better manage and understand their data to make more informed decisions.</p>
+    <a class="button" href="{{site.baseurl}}/about-us/">More About Us</a>
+  </div>
+</div>
+
+  <div class="content" id="contact-us">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="#">
+      <div>
+        <div class="field">
+          <label>First Name*</label>
+          <input class="input" name="firstname" value="" />
+        </div>
+        <div class="field">
+          <label>Last Name*</label>
+          <input class="input" name="lastname" value="" />
+        </div>
+        <div class="field">
+          <label>Email*</label>
+          <input class="input" name="email" value="" />
+        </div>
+      </div>
+      <div>
+        <div class="field">
+          <label>Title</label>
+          <input class="input" name="title" value="" />
+        </div>
+        <div class="field">
+          <label>Organization</label>
+          <input class="input" name="organization" value="" />
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input class="input" name="phone" value="" />
+        </div>
+      </div>
+      <div>
+        <div class="full field">
+          <label>Message*</label>
+          <textarea name="message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="button" value="Submit">Submit</button>
+    </form>
+    
+  </div>
