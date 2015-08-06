@@ -383,7 +383,7 @@ footer, .push {
         border: 0;      
         font-family: $base-font-family;
         cursor: pointer;
-        min-width: 320px;
+        
     }
  }
  
@@ -401,10 +401,12 @@ footer, .push {
         text-transform: uppercase;
         background-color: $brand-color;
         color: white;
-        padding: 14px 50px;
+        padding: 14px;
         margin: $spacing-unit auto;
         display: inline-block; 
-        min-width: 220px;
+        max-width: 320px;
+        width: 90%;
+
         @include transition(background-color .3s ease);
         &:hover {
             background-color: lighten($brand-color, 10%);
@@ -487,8 +489,13 @@ footer, .push {
                                 min-height: 400px;
                                 h2 {
                                     text-transform: uppercase;
-                                    img {
+                                    svg {
                                         width: 50px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        path {
+                                            fill: $brand-color;
+                                        }
                                     }
                                 }
                                 ul { 
@@ -512,7 +519,7 @@ footer, .push {
                                     }
                                 }
                                 a.button {
-                                    min-width: 220px;
+                                    //min-width: 220px;
                                 }
                             }
                         }
@@ -532,7 +539,13 @@ footer, .push {
                                 float: left;
 
                                 .col-inner {   
-                                    h2 {}
+                                    h2 {
+                                        svg {
+                                            width: 90px;
+                                            margin: 8px auto;
+                                            display: block;
+                                        }
+                                    }
                                     ul {                            width: 90%;
                                         li {
                                             text-align: left;
@@ -547,7 +560,7 @@ footer, .push {
                                         }
                                     }
                                     a.button {
-                                       min-width: 70%;
+                                       //min-width: 220px;
                                     }
                                 }
                             }
@@ -837,7 +850,7 @@ footer, .push {
                     line-height: 1.4;
                 }
                 .button {
-                    width:70%;
+                    width:220px;
 
                 }
             }
