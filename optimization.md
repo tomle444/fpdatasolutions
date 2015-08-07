@@ -41,7 +41,7 @@ body-class: static-page optimization
 			<ul>
 				<li><a href="#DoseAnalysis">DoseAnalysis</a></li>
 				<li><a href="#DoseDash">DoseDash</a></li>
-				<li><a href="#DoseDirect">DoseDirect</a></li>
+				<li><a href="#DoseAlert">DoseAlert</a></li>
 				<li><a href="#DoseConnect">DoseConnect</a></li>
 			</ul>
 		</div>
