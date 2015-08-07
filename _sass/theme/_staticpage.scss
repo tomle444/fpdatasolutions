@@ -1,0 +1,344 @@
+/**
+* Static Page
+**/
+.static-page {
+    
+    .page-header {
+        background-image: url('../images/bg_hero.jpg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 210px;
+        line-height: 210px;
+        text-align: center;
+        h1 {
+            vertical-align: middle;
+            color: white;
+            text-align: center;
+            line-height: 1.4;
+            font-size: 40px;
+            text-transform: none;
+            display: inline-block;
+            margin: auto;
+        }
+    }
+    .page-content {
+        .wrapper {
+            padding: 0;
+             .main-content {
+                .content {
+                    text-align: center;
+                    overflow: hidden;
+                    h2 {
+                        text-transform: none;
+                        font-size: 24px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    &.pharmacy-pointe {
+        .page-content {
+            .wrapper {
+                padding: 0;
+                 .main-content {
+                    .content {
+                        text-align: center;
+                        overflow: hidden;
+                        h2 {
+                            text-transform: none;
+                            font-size: 24px;
+                        }
+                        .col {
+                            width: 49%;
+                            float: left;
+
+                            .col-inner {
+                                width: 90%;
+                                margin: auto;
+                                position: relative;
+                                min-height: 400px;
+                                h2 {
+                                    text-transform: uppercase;
+                                    svg {
+                                        width: 50px;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin: 0 6px;
+                                        path {
+                                            fill: $brand-color;
+                                        }
+                                    }
+                                }
+                                ul { 
+                                    color: $brand-color;
+                                    list-style-position: inside;
+                                    display: block;
+                                    clear: both;
+                                    margin: 10px auto;
+                                    width: 75%;
+                                    max-width: 320px;
+                                    min-height: 100px;
+                                    li {
+                                        text-align: left;
+                                        float: left;
+                                        width: 49%;
+                                        padding: 4px 0;
+                                        span {
+                                            color: #000;
+                                            padding: 4px 0 4px 0px;
+                                            font-weight: 400;
+                                        }
+                                    }
+                                }
+                                a.button {
+                                    //min-width: 220px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include bp(max-width, 980px){
+            .page-content {
+                .wrapper {                
+                     .main-content {
+                        .content {                        
+                            h2 {
+                            }
+                            .col {
+                                width: 49%;
+                                float: left;
+
+                                .col-inner {   
+                                    h2 {
+                                        svg {
+                                            width: 90px;
+                                            margin: 8px auto;
+                                            display: block;
+                                        }
+                                    }
+                                    ul {                            width: 90%;
+                                        li {
+                                            text-align: left;
+                                            float: left;
+                                            width: 49%;
+                                            padding: 4px 0;
+                                            span {
+                                                color: #000;
+                                                padding: 4px 0 4px 0px;
+                                                font-size: 14px;   
+                                            }
+                                        }
+                                    }
+                                    a.button {
+                                       //min-width: 220px;
+                                    }
+                                }
+                            }
+                            @include media-query($on-tablet){
+                                .col {
+                                    width: 100%;
+                                    float: none;
+                                    margin-bottom: 20px;
+                                    .col-inner {
+                                        h2 {
+                                            img {
+                                                display: block;
+                                                text-align: center;
+                                                margin: auto;
+                                                width: auto;
+                                            }
+                                        }
+                                        ul {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }      
+    &.news, &.compliance, &.optimization, &.privacy, &.terms-and-conditions, &.about-us {
+        .page-content{
+            .wrapper {
+                .main-content{
+                    .content {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    &.compliance, &.optimization {
+        .page-content {
+            .wrapper {
+                padding: 0;
+                .page-header {
+                    h1 {
+                        text-transform: uppercase;
+                        svg {
+                            width: 50px; height: 50px;
+                            display: inline-block;
+                            vertical-align: top;
+                            path {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+                 .main-content {                    
+                    .content {
+                        background-color: #f6fafc;
+                        margin: 0 auto;
+                        padding: 0;
+                        .col-inner {
+                            margin: 40px 20px;
+                        }
+                        .col-main {
+                            float: right;
+                            width: 75%;
+                            background-color: white;
+                            overflow: hidden;
+                            .col-inner {
+                                width: 85%;
+                                margin: 40px auto;
+                                .intro {
+                                    margin: 20px auto 40px;
+                                    a.compliance-screen {
+                                        display: inline-block;
+                                        width: 33%;
+                                        margin: 20px auto;
+                                        text-align: center; 
+                                        img {
+                                            width: 240px;
+                                        }
+                                    }
+                                }
+
+                                h4 {
+                                    color: $brand-color;
+                                    font-weight: 400;
+                                    text-transform: none;
+                                    font-size: 18px;
+                                    padding: 20px 0;
+                                    margin-bottom: 0;
+                                }
+                                .dose-section {                                   
+                                    border-top: 1px solid #eee;
+                                    .dose-description {
+                                        margin-bottom: 30px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .col-left {
+                            background-color: #f6fafc;
+                            width: 24%;
+                            float: left;
+                            ul {
+                                list-style-type: none;
+                                li {
+                                    padding: 8px;
+                                    a {}
+                                }
+                            }
+                        }                                         
+                    }
+                    .content-bottom {
+                        background-color: $brand-color;
+                        padding: 0;
+                        margin: 0 auto;
+                        max-width: 100%;
+                        .content {
+                            text-align: center;
+                            color: white;
+                            background-color: $brand-color;
+                            padding: 40px 20px;
+                            h2 {
+                                font-size: 34px;
+                                color: white;
+                                text-transform: uppercase;
+                            }
+                            a.button {
+                                background-color: #008ec9;
+                                &:hover {
+                                    background-color: lighten($brand-color, 10%);
+                                }
+                            }
+                            
+                        }
+                    }  
+                    @include media-query($on-tablet){
+                        .content {
+                            .col-left {
+                                display: none;
+                            }
+                            .col-main {
+                                float: none; 
+                                width: 100%;
+                                .col-inner {
+
+
+                                    .intro {
+                                        a.compliance-screen {
+                                            width: 100%; 
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .dose-section {
+                                        h4 {
+                                            text-transform: uppercase;
+                                            cursor: pointer;                                     
+                                            position: relative;
+                                            &:after {
+                                                content: '';
+                                                position: absolute;
+                                                display: block;
+                                                top: 40%; 
+                                                right: 2%;
+                                                width: 0;
+                                                height: 0;
+                                                border-style: solid;
+                                                border-width: 6px 0 6px 10px;
+                                                border-color: transparent transparent transparent $brand-color;
+                                            } 
+                                        }
+                                        .dose-description {
+
+                                        }
+                                        &.active {
+                                            h4 {
+                                                &:after {
+                                                    border-width: 10px 6px 0px 6px;
+                                                    border-color: 
+                                                        $brand-color
+                                                        transparent transparent transparent; 
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+

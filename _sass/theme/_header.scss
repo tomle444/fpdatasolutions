@@ -1,0 +1,153 @@
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 0px solid $grey-color-dark;
+    border-bottom: 0px solid $grey-color-light;
+    min-height: 125px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    .wrapper {
+        position: relative;
+    }
+    .logo {
+        margin-top: 15px;
+    }
+    a.login {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: uppercase;
+        background-color: #edf5fa;
+        font-size: 11px;
+        color: $brand-color;
+        font-weight: 400;
+        padding: 6px 20px;
+        @include transition(background-color .3s ease);
+        &:hover {
+            background-color: darken(#edf5fa, 5%);
+        }
+    }
+    
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 105px;
+    margin-top: 10px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $brand-color;
+        line-height: $base-line-height;
+        text-transform: uppercase;
+        font-weight: 400;
+        // Gaps between nav items, but not on the first one
+        @include transition(color .3s ease);      
+    
+        &:hover {
+            color: lighten($brand-color, 25%);
+        }
+
+    }     
+    @include bp(max-width, 830px){
+        .page-link {
+            font-size: 13px;
+        }
+    } 
+}
+
+@include media-query($on-tablet) {
+    .site-header {
+        min-height: 70px;
+        .logo {
+            width: 200px;
+            margin-top: 4px;
+            position: relative;
+            z-index: 4;
+        }
+        a.login {
+            display: none;
+        }
+
+        
+
+        .site-nav {
+            margin-top: 0; 
+            position: absolute; 
+            top: 0px;
+            right: 0px;
+            background-color: rgba(0,0,0,0);
+            border: 0px solid $grey-color-light;
+            border-radius: 0px;
+            text-align: center;
+            width: 100%;
+            z-index: 3;
+
+            .menu-icon {
+                display: block;
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                padding-top: 0px;
+                text-align: center;
+                background-color: $brand-color;
+                position: absolute;
+                right: 0; 
+                > svg {
+                    width: 18px;
+                    height: 15px;
+                    path {
+                        fill: white;
+                    }
+                }    
+                       
+            }
+            .trigger {
+                clear: both;
+                display: none;
+                padding-bottom: 5px;
+                top: 70px;
+                position: absolute;
+                width: 100%;
+            }
+
+            &:hover {
+                .trigger {
+                    display: block;
+                }
+            }    
+            
+
+            .page-link {
+                display: block;
+                padding: 16px;
+                font-size: 16px;
+                background-color: rgba(255,255,255,1);
+                border-bottom: 1px solid #eee;                
+                @include bp(max-width, $on-tablet){
+                    &:not(:first-child) {
+                        margin-left: 0px;
+                    }
+                }                
+            }
+            
+        }
+    }
+}

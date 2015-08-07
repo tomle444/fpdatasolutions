@@ -15,7 +15,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fff;
-$brand-color:      #0076bc;
+$brand-color:      #0576BC;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -50,6 +50,13 @@ $on-desktop:       1024px;
         "base",
         "layout",
         "syntax-highlighting",
-        "mixins",
-        "custom" // Focal Pointe Data Solution styles
+        "mixins/transitions",
+        "mixins/breakpoints",
+        "custom", // Focal Pointe Data Solution styles
+        "theme/homepage",
+        "theme/header",
+        "theme/footer",
+        "theme/staticpage",
+        "theme/responsiveness"
+
 ;

@@ -16,13 +16,8 @@
 			    	$(this).siblings(".dose-description").slideDown();
 			    }
 			    $(this).parent().toggleClass('active');
-			});
-
-			$("a.menu-icon").click(function(){
-				$(".trigger").toggle();
-				
-			});
+			});			
 		});
-
 	}
+
 })();
