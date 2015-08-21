@@ -10,18 +10,7 @@ body-class: static-page compliance
 
 <header class="page-header">
     <h1>
-    	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 74 88.2" enable-background="new 0 0 74 88.2" xml:space="preserve">
-		<path d="M37,88.3c-0.2,0-0.4,0-0.6-0.1C4.2,79.1,0.2,58.1,0,57.2c0-0.1,0-0.3,0-0.4V4.3c0-0.9,0.5-1.7,1.3-2
-			c0.8-0.3,1.7-0.2,2.4,0.5c3.9,3.9,7.1,5.2,13,5.2c7.1,0,14.9-3.3,18.6-7.9c0.8-1,2.6-1,3.5,0c3.7,4.6,11.5,7.9,18.6,7.9
-			c5.8,0,9.1-1.3,13-5.2c0.6-0.6,1.6-0.8,2.4-0.5c0.8,0.3,1.3,1.1,1.3,2v52.6c0,0.1,0,0.3,0,0.4c-0.2,0.9-4.1,21.8-36.4,30.9
-			C37.4,88.2,37.2,88.3,37,88.3z M4.4,56.6c0.4,2,4.9,19.1,32.6,27.1c27.8-8,32.2-25.1,32.6-27.1V9c-3.5,2.4-7.2,3.3-12.3,3.3
-			c-7.5,0-15.5-3.1-20.3-7.8c-4.8,4.7-12.8,7.8-20.3,7.8c-5.1,0-8.9-0.9-12.3-3.3V56.6z"/>
-		<path d="M42.8,64.9H31.2c-1.2,0-2.2-1-2.2-2.2V50.3H16.7c-1.2,0-2.2-1-2.2-2.2V36.4c0-1.2,1-2.2,2.2-2.2H29V21.8
-			c0-1.2,1-2.2,2.2-2.2h11.6c1.2,0,2.2,1,2.2,2.2v12.4h12.3c1.2,0,2.2,1,2.2,2.2v11.7c0,1.2-1,2.2-2.2,2.2H45v12.4
-			C45,63.9,44,64.9,42.8,64.9z M33.4,60.5h7.3V48.1c0-1.2,1-2.2,2.2-2.2h12.3v-7.3H42.8c-1.2,0-2.2-1-2.2-2.2V24h-7.3v12.4
-			c0,1.2-1,2.2-2.2,2.2H18.9v7.3h12.3c1.2,0,2.2,1,2.2,2.2V60.5z"/>
-		</svg>
+    	<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 404 396.2" enable-background="new 0 0 404 396.2" xml:space="preserve"><path d="M7.9 396.2h98.3c4.4 0 8-3.6 8-7.9v-98.3c0-4.4-3.6-7.9-8-7.9H7.9c-4.4 0-7.9 3.6-7.9 7.9v98.3C0 392.6 3.6 396.2 7.9 396.2L7.9 396.2zM26.2 308.2H88V370H26.2V308.2zM26.2 308.2 7.9 254.3h98.3c4.4 0 8-3.6 8-7.9V148c0-4.4-3.6-7.9-8-7.9H7.9c-4.4 0-7.9 3.6-7.9 7.9v98.3C0 250.7 3.6 254.3 7.9 254.3L7.9 254.3zM26.2 166.3H88v61.7H26.2V166.3zM26.2 166.3"/><defs><rect width="153.8" height="395"/></defs><clipPath><use overflow="visible"/></clipPath><path clip-path="url(#SVGID_2_)" d="M81.7 106.2c-6.7 0-13.4-2.6-18.5-7.7L52.8 88.2H26.2V26.4H88v10.2l26.2-26.2V8.1c0-4.4-3.6-7.9-8-7.9H7.9C3.6 0.2 0 3.8 0 8.1v98.3c0 4.4 3.6 7.9 7.9 7.9h98.3c4.4 0 8-3.6 8-7.9V84.6l-14 14C95.1 103.6 88.4 106.2 81.7 106.2L81.7 106.2zM81.7 106.2 150.1 11.6c-5.1-5.1-13.4-5.1-18.5 0L81.7 61.4 66.4 46.1c-5.1-5.1-13.4-5.1-18.5 0 -5.1 5.1-5.1 13.4 0 18.5l24.6 24.6c2.6 2.6 5.9 3.8 9.3 3.8 3.4 0 6.7-1.3 9.3-3.8l59.1-59.1C155.2 25 155.2 16.7 150.1 11.6L150.1 11.6zM150.1 11.6"/><path d="M384 78H190c-11 0-20-9-20-20s9-20 20-20h194c11 0 20 9 20 20S395 78 384 78z"/><path d="M384 217.5H190c-11 0-20-9-20-20s9-20 20-20h194c11 0 20 9 20 20S395 217.5 384 217.5z"/><path d="M384 359.1H190c-11 0-20-9-20-20s9-20 20-20h194c11 0 20 9 20 20S395 359.1 384 359.1z"/></svg>
 		{{ page.title }}</h1>
   </header>
 
@@ -34,7 +23,6 @@ body-class: static-page compliance
 			<li><a href="#DoseAnalysis">DoseAnalysis</a></li>
 			<li><a href="#DoseAssist">DoseAssist</a></li>
 			<li><a href="#DoseDirect">DoseDirect</a></li>
-			<li><a href="#DoseConnect">DoseConnect</a></li>
 		</ul>
 	</div>
 	</div>
@@ -71,12 +59,6 @@ body-class: static-page compliance
 		</div>
 
 		
-		<div class="dose-section">
-			<h4 id="DoseConnect">DoseConnect</h4>
-			<div class="dose-description">
-				<p>DoseConnect is the core PharmacyPointe technology that integrates with clients’ IV Workflow Management (IVWM) systems. DoseConnect unlocks the data in your IVWM system to enable detailed data analysis, deep operational insights, and powerful knowledge management. </p>
-			</div>
-		</div>
 
 	</div>
 	</div>

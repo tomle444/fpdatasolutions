@@ -1,14 +1,50 @@
 ---
 layout: page
 title: Contact Us
-permalink: contact-us
+permalink: contact-us/
 link-class: contact-link
 weight: 4
-body-class: contact
+body-class: static-page contact
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+  
+<div class="content" id="contact-us">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="#">
+      <div>
+        <div class="field">
+          <label>First Name*</label>
+          <input class="input" name="firstname" value="" />
+        </div>
+        <div class="field">
+          <label>Last Name*</label>
+          <input class="input" name="lastname" value="" />
+        </div>
+        <div class="field">
+          <label>Email*</label>
+          <input class="input" name="email" value="" />
+        </div>
+      </div>
+      <div>
+        <div class="field">
+          <label>Title</label>
+          <input class="input" name="title" value="" />
+        </div>
+        <div class="field">
+          <label>Organization</label>
+          <input class="input" name="organization" value="" />
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input class="input" name="phone" value="" />
+        </div>
+      </div>
+      <div>
+        <div class="full field">
+          <label>Message*</label>
+          <textarea name="message"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="button" value="Submit">Submit</button>
+    </form>
+    
+</div>
