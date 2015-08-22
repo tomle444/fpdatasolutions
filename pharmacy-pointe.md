@@ -22,7 +22,7 @@ body-class: static-page pharmacy-pointe
 			<li><span>DoseCompliance</span></li>
 			<li><span>DoseDirect</span></li>
 			<li><span>DoseAssist</span></li>
-			<li><span>DoseConnect</span></li>
+			
 		</ul>
 		<a class="button" href="{{site.baseurl}}/compliance/">Learn More</a>
 	</div>
@@ -32,8 +32,7 @@ body-class: static-page pharmacy-pointe
 		<h2><svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 901 901" enable-background="new 0 0 901 901" xml:space="preserve"><path d="M900.5 851c0-27.6-22.4-50-50-50h-750V50c0-27.6-22.4-50-50-50s-50 22.4-50 50v751c0 55.1 44.9 100 100 100h750C878.1 901 900.5 878.6 900.5 851zM329.3 416.7L149 649.1c-8.5 10.9-6.5 26.6 4.4 35.1l39.5 30.7c10.9 8.5 26.6 6.5 35.1-4.4l153.9-198.3c8.4-10.9 21-17.8 34.7-19.1l170.3-16.5c13.2-1.3 25.4-7.7 33.8-18l174.6-212.2 42 34.8c16 13.2 40.2 2.4 40.9-18.4l6.1-170.7c0.6-16.1-14.1-28.6-29.9-25.4l-170.7 34.4c-20.6 4.1-27.2 30.3-11 43.8l45.6 37.8L569.7 363c-8.4 10.2-20.6 16.7-33.8 18l-172 16.6C350.3 399 337.7 405.9 329.3 416.7z"/></svg>
  Optimization</h2>
 		<p>Duis pretium non arcu ac facilisis. Aenean eleifend enim ut lorem pulvinar consequat. Proin a efficitur tellus, nec rutrum metus. Vivamus in congue quam, at hendrerit massa. In hac habitasse platea dictumst. Praesent tristique accumsan lacus ac commodo. Duis justo tellus, pellentesque vel diam vitae.</p>
-		<ul>
-			<li><span>DoseOptima</span></li>
+		<ul>			
 			<li><span>DoseScan</span></li>
 			<li><span>DoseDash</span></li>
 			<li><span>DoseConnect</span></li>

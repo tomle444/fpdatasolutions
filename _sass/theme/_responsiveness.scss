@@ -28,3 +28,19 @@
     }    
 
 }
+
+@include bp(max-width, 530px) {
+
+     .page-content {
+        .wrapper {  
+            .home {
+                .hero {
+                    background-image: url('../images/bg_hero_mobile.jpg');
+                    h1 {
+                       
+                    }
+                }
+            }
+        }
+    }
+}

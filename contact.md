@@ -8,7 +8,20 @@ body-class: static-page contact
 ---
   
 <div class="content" id="contact-us">
-    <h2>Contact Us</h2>
+    <h2>We want to hear from you</h2>
+ 
+
+<p>Please fill out the Contact Us form with any questions, comments or suggestions you may have and we will follow up with you shortly.  Thank you!</p>
+
+ 
+
+<p><strong>Focal Pointe Data Solutions, LLC.</strong><br />
+1925 Palomar Oaks Way, Suite 215<br />
+Carlsbad, CA 92008</p>
+
+<p>TEL: (866) 979-FPDS (3737)<br />
+FAX: (866) 901-7724</p>
+
     <form class="contact-form" action="#">
       <div>
         <div class="field">
