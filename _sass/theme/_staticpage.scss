@@ -186,8 +186,10 @@
                 .page-header {
                     h1 {
                         text-transform: uppercase;
+                        line-height: 1.2;
                         svg {
                             width: 50px; height: 50px;
+                            margin-right: 20px;
                             display: inline-block;
                             vertical-align: top;
                             path {
@@ -229,12 +231,12 @@
                                     border-top: 1px solid #eee;
                                     .dose-description {
                                         margin-bottom: 30px;
+                                        overflow: hidden; 
                                         .compliance-screen {
                                             display: inline-block;
-                                            float: left;
-                                            margin: 20px 20px 20px auto;
+                                            float: right;
+                                            margin: 0px 0px 20px 20px;
                                             text-align: center; 
-                                            
                                             width: 240px;
                                             
                                         }

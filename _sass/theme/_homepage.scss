@@ -56,11 +56,14 @@
                     }
                 }
             }
-                  
+            .content {
+                min-height: 650px;
+            }       
         }
         .about {
             background-color: $brand-color;
             overflow: hidden;
+            min-height: 450px;
             .content {
                 color: #fff;
                 svg#about {

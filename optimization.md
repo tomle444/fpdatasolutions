@@ -29,7 +29,7 @@ body-class: static-page optimization
 	<div class="col-main">
 	<div class="col-inner">
 
-	<div class="intro">
+	<div class="intro"> 
 		<p>In the era of shrinking budgets, increased workloads, and a requirement to do more with less, the need for capturing important data in real-time to help optimize your pharmacy’s compounding operations is becoming critical. Having access to the right data at the right time can significantly help hospital pharmacies improve productivity and limit any rework, waste and potentially expensive errors. </p>
 
 		<p><strong>Focal Pointe’s PharmacyPointe suite of optimization reports provides significant insight and knowledge into the compounding workflow and staff performance.</strong> </p>
@@ -66,7 +66,7 @@ body-class: static-page optimization
 	<div class="content">
 		<h2>Get Pharmacy Pointe</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nisl magna. Ut aliquet vestibulum ligula, et lacinia augue varius id. Vivamus at gravida orci, eget ornare nisl. Nam consequat lobortis tortor, eu malesuada augue laoreet facilisis. Nam ut tellus diam. Donec eu sapien ut leo tempus convallis ut a justo.</p>
-		<a class="button" href="{{ site.baseurl }}/#contact-us">Contact Us</a>
+		<a class="button" href="{{ site.baseurl }}/contact-us">Contact Us</a>
 	</div>
 	</div>
 </section>
