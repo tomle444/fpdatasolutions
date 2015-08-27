@@ -34,13 +34,21 @@
 			});	
 			
 				
+			
+		});
+	}
+	$( window ).load(function() {
+		if($('.touch').length){
+			
+			// mobile pop up navigation functionality
+			
 			$('.menu-icon').click(function(e){
 				$('.trigger').toggleClass('active');
 				e.stopPropagation();
 			});		
-		});
-	}
-	
+			
+		}
+	});
 
 
 
