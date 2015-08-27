@@ -1,5 +1,5 @@
 /* 
-* Scroll To Navigation
+* All Scrolling custom functionality
 */
 
 (function(){

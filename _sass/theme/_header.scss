@@ -126,11 +126,14 @@
                 top: 70px;
                 position: absolute;
                 width: 100%;
+                &.active {
+                    display:block;
+                }
             }
 
             &:hover {
                 .trigger {
-                    display: block;
+                    //display: block;
                 }
             }    
             
@@ -150,4 +153,18 @@
             
         }
     }
+    // on desktop viewport < 768px, allow for hover menu to still function
+    .desktop{
+        .site-header {
+            .site-nav {
+                .menu-icon {}
+                &:hover {
+                    .trigger {
+                        display: block;
+                    }
+                }
+            }    
+        }
+    }
+    
 }
