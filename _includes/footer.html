@@ -9,11 +9,9 @@
       {% for page in pages %}
         
          {% if page.weight > 0 %}
-          {% if page.title != "Contact Us" %}
+          
             <a class="footer-link {{page.link-class}}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            {% else %}
-            <a class="footer-link {{page.link-class}}" href="{{ site.baseurl }}/#{{ page.permalink }}" >{{ page.title }}</a>
-          {% endif %}
+            
         {% endif %}
         
       {% endfor %}
@@ -24,7 +22,7 @@
       <a href="{{ site.baseurl }}/privacy">Privacy</a> 
       <a href="{{ site.baseurl }}/terms-and-conditions">Terms and Conditions</a> 
     <span>|</span>
-      <a href="{{ site.baseurl }}/#contact-us">Contact Us</a>
+      <a href="{{ site.baseurl }}/contact-us">Contact Us</a>
   </div>
   <div id="topPage">
     <a href="javascript:void(0);">Top</a>

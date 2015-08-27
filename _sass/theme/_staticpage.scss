@@ -4,8 +4,8 @@
 .static-page {
     
     .page-header {
-        background-image: url('../images/bg_hero.jpg');
-        background-position: top center;
+        background-image: url('../images/bg_static.jpg');
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 210px;
@@ -20,6 +20,7 @@
             text-transform: none;
             display: inline-block;
             margin: auto;
+            text-shadow: 2px 2px 1px rgba(0,0,0,0.95);
         }
     }
     .page-content {
@@ -63,6 +64,7 @@
                                     text-transform: uppercase;
                                     svg {
                                         width: 50px;
+                                        height: 50px;
                                         display: inline-block;
                                         vertical-align: middle;
                                         margin: 0 6px;
@@ -120,7 +122,8 @@
                                             display: block;
                                         }
                                     }
-                                    ul {                            width: 90%;
+                                    ul {                           
+                                    width: 90%;
                                         li {
                                             text-align: left;
                                             float: left;
@@ -184,13 +187,21 @@
                 .page-header {
                     h1 {
                         text-transform: uppercase;
+                        line-height: 1.2;
                         svg {
                             width: 50px; height: 50px;
+                            margin-right: 20px;
                             display: inline-block;
                             vertical-align: top;
                             path {
                                 fill: white;
                             }
+                        }
+                        img {
+                            width: 50px; height: 50px;
+                            margin-right: 5px;
+                            display: inline-block;
+                            vertical-align: top;
                         }
                     }
                 }
@@ -212,17 +223,9 @@
                                 margin: 40px auto;
                                 .intro {
                                     margin: 20px auto 40px;
-                                    a.compliance-screen {
-                                        display: inline-block;
-                                        width: 33%;
-                                        margin: 20px auto;
-                                        text-align: center; 
-                                        img {
-                                            width: 240px;
-                                        }
-                                    }
+                                    
                                 }
-
+                               
                                 h4 {
                                     color: $brand-color;
                                     font-weight: 400;
@@ -235,6 +238,15 @@
                                     border-top: 1px solid #eee;
                                     .dose-description {
                                         margin-bottom: 30px;
+                                        overflow: hidden; 
+                                        .compliance-screen {
+                                            display: inline-block;
+                                            float: right;
+                                            margin: 0px 0px 20px 20px;
+                                            text-align: center; 
+                                            width: 240px;
+                                            
+                                        }
                                     }
                                 }
                             }
@@ -315,7 +327,11 @@
                                             } 
                                         }
                                         .dose-description {
-
+                                            .compliance-screen {
+                                                float: none;
+                                                margin: 20px auto;
+                                                display: block;
+                                            }
                                         }
                                         &.active {
                                             h4 {
