@@ -33,10 +33,7 @@
 			    $(this).parent().toggleClass('active');
 			});	
 			
-			// mobile pop up navigation functionality
-			$('html').click(function(){
-				//$('.trigger').removeClass('active');
-			});		
+				
 			$('.menu-icon').click(function(e){
 				$('.trigger').toggleClass('active');
 				e.stopPropagation();
@@ -52,9 +49,7 @@
 				$('.trigger').toggleClass('active');
 				e.stopPropagation();
 			});		
-			$('html, body').click(function(){
-				//$('.trigger').removeClass('active');
-			});		
+			
 		}
 	});
 
