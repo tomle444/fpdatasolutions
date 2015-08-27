@@ -35,7 +35,7 @@
 			
 			// mobile pop up navigation functionality
 			$('html').click(function(){
-				$('.trigger').removeClass('active');
+				//$('.trigger').removeClass('active');
 			});		
 			$('.menu-icon').click(function(e){
 				$('.trigger').toggleClass('active');
