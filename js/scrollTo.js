@@ -9,6 +9,7 @@
 	    	$(window).scrollTop(0);
 	    }
 	});
+	
 	$( document ).ready(function() {
 	    var windowWidth = $(this).width();
 	    var windowHeight = $(this).height();
@@ -24,8 +25,11 @@
 		if($('.homepage').length){	
 			if(windowWidth >= 768){	 
 				// set animation start points
-				$('.home .content img, .content h2, .content p, .content .button,  .about .content svg').css({
+				$(' .content h2, .content p, .content .button,  .about .content svg').css({
 						"opacity" : "0"				
+					});
+				$('.home .content img').css({
+						"opacity" : ".1"				
 					});
 				$('.home .content img, .about .content svg').css({
 					"margin-top" : "100px"
@@ -38,9 +42,6 @@
 				}, 600);
 			}  
 		}
-
-		
-		
 	});
 
 	$(window).scroll(function () {
