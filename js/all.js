@@ -33,7 +33,6 @@
 			    $(this).parent().toggleClass('active');
 			});	
 			
-				
 			
 		});
 	}
@@ -46,7 +45,9 @@
 				$('.trigger').toggleClass('active');
 				e.stopPropagation();
 			});		
-			
+			$('html, body').click(function(){
+				$('.trigger').removeClass('active');
+			});		
 		}
 	});
 
