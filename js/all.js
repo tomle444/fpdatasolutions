@@ -3,12 +3,15 @@
 */
 
 (function(){
-
+	
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	  // tasks to do if it is a Mobile Device
 	  $( window ).load(function() {
 	  	$('body').addClass('touch');
 	  });
+
+		
+
 	} else {
 		$( window ).load(function() {
 		  	$('body').addClass('desktop');
@@ -40,8 +43,21 @@
 			});		
 		});
 	}
+	$( window ).load(function() {
+		if($('.touch').length){
+			
+			// mobile pop up navigation functionality
+			$('html').click(function(){
+				$('.trigger').removeClass('active');
+			});		
+			$('.menu-icon').click(function(e){
+				$('.trigger').toggleClass('active');
+				e.stopPropagation();
+			});		
+		}
+	});
 
-	 
+
 
 
 })();

@@ -10,7 +10,7 @@
 	    }
 	});
 	
-	$( document ).ready(function() {
+	$( window ).load(function() {
 	    var windowWidth = $(this).width();
 	    var windowHeight = $(this).height();
 	    var windowScrollTop = $(this).scrollTop();
@@ -22,7 +22,7 @@
 		});
 		$('#topPage').css('display', 'none');
 
-		if($('.homepage').length){	
+		if($('.homepage.desktop ').length){	
 			if(windowWidth >= 768){	 
 				// set animation start points
 				$(' .content h2, .content p, .content .button,  .about .content svg').css({
